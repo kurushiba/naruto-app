@@ -1,8 +1,6 @@
 .container {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 16px;
+  padding-top: 0;
+  text-align: center;
 }
 
 .header {
@@ -11,12 +9,15 @@
   align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
+  background-color: #bce2e8;
 }
 
-.logo-search-area,
-.nav-profile-area {
-  display: flex;
-  align-items: center;
+.header-content {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 .logo {
@@ -25,30 +26,11 @@
   height: 50px;
 }
 
-.nav-links {
-  display: flex;
-  gap: 16px;
-}
-
-.nav-link {
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.globe-icon {
-  margin-right: 16px;
-}
-
-.profile-area {
-  display: flex;
-  align-items: center;
-  border: 1px solid;
-  border-radius: 9999px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 12px;
-  padding-right: 12px;
-  gap: 8px;
+main {
+  margin-top: 16px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cards-container {
@@ -89,14 +71,9 @@
   margin-top: 8px;
 }
 
-.affiliation,
-.rating {
+.affiliation {
   font-size: 0.875rem;
   font-weight: 500;
-}
-
-.star-icon {
-  color: #fc8181;
 }
 
 .footer {
@@ -120,21 +97,9 @@
     align-items: flex-start;
   }
 
-  .logo-search-area,
-  .nav-profile-area {
+  .logo-wrapper {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .globe-icon,
-  .nav-link {
-    margin-right: 0;
-    margin-bottom: 8px;
   }
 
   .cards-container {
@@ -150,19 +115,18 @@
   }
 
   .card-description,
-  .affiliation,
-  .rating {
+  .affiliation {
     font-size: 0.75rem;
   }
 }
-.pagination {
+.pager {
   text-align: center;
   padding: 20px;
   font-family: Arial, sans-serif;
   color: #333;
 }
 
-.pagination button {
+.pager button {
   width: 125px;
   margin: 0 10px;
   padding: 8px 16px;
@@ -174,17 +138,17 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-.pagination button:hover {
+.pager button:hover {
   background-color: #555;
 }
 
-.pagination button:disabled {
+.pager button:disabled {
   color: #aaa;
   border-color: #aaa;
   cursor: default;
 }
 
-.pagination .page-number {
+.pager .page-number {
   margin: 0 15px;
   font-size: 1.1em;
 }
